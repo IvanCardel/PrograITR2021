@@ -14,20 +14,48 @@
     <?php include_once("../layout/nav2.php") ?>
     <div class="container mt-5 col-8">
         <div class="card">
-            <div class="card-header bg-primary">
-                <h1>Covertir palabra</h1>
-            </div>
-            <div class="card-body">
-                <form class="form" method="POST" id="datosCotizacion" action="checarPalabra.php">
-                    <div class="mb-3">
-                      <label for="palabra" class="form-label">Ingresa la palabra</label>
-                      <input type="text" class="form-control" name="palabra" id="palabra" aria-describedby="emailHelp" required>
-                      <div id="emailHelp" class="form-text">Ingresa una palabra y te regresaremos su equivalente pero invertida</div>
-                    </div>
-                    <button type="submit" class="btn btn-outline-primary" id="enviar">Enviar</button>
-                </form>
-            </div>
+		<div class="card-header text-center">
+			<h1>Calculadora</h1>
+		</div>
+		<div class="card-body">
+		<form method="POST" id="datos">
+		<div class="container">
+			<input type="text" name="operando1">
+		</div>
+		<div class="container">
+			<select name="operador">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+		</div>
+		<div class="container">
+			<input type="text" name="operando2">
+		</div>
+		<div class="card-footer">
+		<div class="pull-right text-center">
+			<button type="submit" class="btn btn-lg text-primary" id="enviar">
+			Calcular
+			</button>
+		</div>
+		</div>
+	</form>
+		</div>
         </div>
     </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="../js/datos.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/all.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  
+  <script src="../js/stylish-portfolio.min.js"></script>
 </body>
 </html>

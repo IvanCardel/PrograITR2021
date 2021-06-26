@@ -12,10 +12,6 @@
 </head>
 <body>
     <?php include_once("../layout/nav2.php") ?>
-    <div class="container mt-5 col-6">
-        <?php
-            
-        ?>
-    </div>
+    
 </body>
 </html>
